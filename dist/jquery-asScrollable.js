@@ -8,14 +8,14 @@
 */
 (function(global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(['exports', 'jQuery'], factory);
+    define(['exports', 'jquery'], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require('jQuery'));
+    factory(exports, require('jquery'));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.jQuery);
+    factory(mod.exports, global.jquery);
     global.jqueryAsScrollable = mod.exports;
   }
 })(this,
